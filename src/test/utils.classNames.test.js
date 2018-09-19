@@ -10,4 +10,4 @@ test('nothing input return a void string ``', () => {
 
 test('add only a class name `class0` return `class0`', () => {
 	expect(classNames('class0')).toBe('class0');
-})
+});
