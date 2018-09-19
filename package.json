@@ -46,7 +46,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix"
 	},
-	"homepage":".",
+	"homepage":"",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
