@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../media/logo.svg';
+import logo from '../../media/logo-otakus.svg';
 import './app.scss';
 /* eslint-disable */
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Otakus</h1>
+          <h1 className="App-title">Welcome to Otakus !</h1>
         </header>
       </div>
     );
