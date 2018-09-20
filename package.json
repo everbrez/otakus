@@ -45,8 +45,10 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom --coverage --coverageReporters=text-lcov | coveralls",
     "lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix"
-	},
-	"pre-commit": [ "lint" ],
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "homepage": "",
   "jest": {
     "collectCoverageFrom": [
