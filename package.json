@@ -44,8 +44,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom --coverage",
-		"lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix",
-		"coverage": "node scripts/test.js --env=jsdom --coverage --coverageReporters=text-lcov | coveralls"
+    "lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix",
+    "coverage": "node scripts/test.js --env=jsdom --coverage --coverageReporters=text-lcov | coveralls"
   },
   "pre-commit": [
     "lint"
@@ -95,11 +95,14 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.9.3",
     "pre-commit": "^1.2.2",
     "sass-loader": "^7.1.0"
