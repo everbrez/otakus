@@ -43,8 +43,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom --coverage | coveralls",
-    "lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix"
+    "test": "node scripts/test.js --env=jsdom --coverage",
+		"lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix",
+		"coverage": "node scripts/test.js --env=jsdom --coverage --coverageReporters=text-lcov | coveralls"
   },
   "pre-commit": [
     "lint"
