@@ -1,5 +1,5 @@
 function classNames(...className) {
-  return className.join(' ');
+  return className.filter(item => typeof item === typeof '').join(' ');
 }
 
 export { classNames };
