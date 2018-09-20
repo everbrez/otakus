@@ -11,3 +11,11 @@ test('nothing input return a void string ``', () => {
 test('add only a class name `class0` return `class0`', () => {
 	expect(classNames('class0')).toBe('class0');
 });
+
+test('if avgs is not string, then return ``', () => {
+	expect(classNames([])).toBe('');
+	expect(classNames({})).toBe('');
+	expect(classNames([''],'class1')).toBe('class1');
+	expect(classNames(true,'class2')).toBe('class2');
+	expect(classNames(false,'class3')).toBe('class3');
+})
